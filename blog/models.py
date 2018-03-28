@@ -17,4 +17,5 @@ class post(models.Model):
     image=models.ImageField(upload_to="resimler",default="resimler/resim.png")
     link=models.URLField( blank=True)
     video=models.FileField(upload_to="BlogVideo",blank=True)
+    okunmasayisi=models.IntegerField(default=0)
 
